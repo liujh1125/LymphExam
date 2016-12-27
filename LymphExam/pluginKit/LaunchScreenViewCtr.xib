@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchScreenViewCtr" customModule="LymphExam" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9m-2g-02p">
+                    <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国内唯一治疗淋巴水肿平台" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9u-JC-2Bt">
+                            <rect key="frame" x="83" y="20.5" width="208" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="mpy-ma-gKb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.46652251482009888" green="0.73949116468429565" blue="0.24457326531410217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="i9u-JC-2Bt" firstAttribute="centerX" secondItem="f9m-2g-02p" secondAttribute="centerX" id="f24-Uo-ZFf"/>
+                        <constraint firstItem="i9u-JC-2Bt" firstAttribute="centerY" secondItem="f9m-2g-02p" secondAttribute="centerY" id="pmj-8c-7dC"/>
+                        <constraint firstAttribute="height" constant="65" id="rDg-Hz-xlA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f9m-2g-02p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kae-rY-BXf"/>
+                <constraint firstAttribute="trailing" secondItem="f9m-2g-02p" secondAttribute="trailing" id="b2n-KL-IW6"/>
+                <constraint firstAttribute="bottom" secondItem="f9m-2g-02p" secondAttribute="bottom" id="fww-CF-ccX"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
