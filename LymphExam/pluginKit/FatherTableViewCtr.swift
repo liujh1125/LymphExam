@@ -49,7 +49,7 @@ class FatherTableViewCtr: UIViewController,HeadViewDelegate, UITableViewDelegate
         tabView.dataSource = self
         self.view.addSubview(tabView)
         
-        tabView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: WIDTH, height: 0))
+        tabView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: WIDTH, height: 64))
         
     }
 

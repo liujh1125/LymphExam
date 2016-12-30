@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Dcr-7f-EX5" customClass="TimePickerView" customModule="LymphExam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4G3-9c-ZhP">
+                    <rect key="frame" x="0.0" y="5" width="320" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="kF0-7O-GYK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCU-gl-LYj" userLabel="LineView">
+                    <rect key="frame" x="0.0" y="40" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9Ht-GJ-Igv"/>
+                    </constraints>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kux-6V-Q22">
+                    <rect key="frame" x="0.0" y="41" width="320" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="1Z4-Id-aQu"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="469699377.93781501">
+                        <!--2015-11-20 08:02:57 +0000-->
+                    </date>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zay-k8-aDJ">
+                    <rect key="frame" x="10" y="5" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7bT-fL-Py1"/>
+                        <constraint firstAttribute="width" constant="50" id="Dzk-EO-Iih"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelClickAction:" destination="Dcr-7f-EX5" eventType="touchUpInside" id="j2a-xJ-dRk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBh-FN-1D7">
+                    <rect key="frame" x="260" y="5" width="50" height="30"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.63137254899999995" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8RQ-AD-YH0"/>
+                        <constraint firstAttribute="width" constant="50" id="Nmk-j2-Ch2"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmClickAction:" destination="Dcr-7f-EX5" eventType="touchUpInside" id="inH-p6-19k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kux-6V-Q22" firstAttribute="leading" secondItem="Dcr-7f-EX5" secondAttribute="leading" id="0z8-iK-N3B"/>
+                <constraint firstItem="JCU-gl-LYj" firstAttribute="leading" secondItem="Dcr-7f-EX5" secondAttribute="leading" id="9Iw-cs-tbJ"/>
+                <constraint firstAttribute="trailing" secondItem="JCU-gl-LYj" secondAttribute="trailing" id="CWn-lk-OAA"/>
+                <constraint firstItem="4G3-9c-ZhP" firstAttribute="top" secondItem="Dcr-7f-EX5" secondAttribute="top" constant="5" id="EDk-wc-3aK"/>
+                <constraint firstItem="4G3-9c-ZhP" firstAttribute="leading" secondItem="Dcr-7f-EX5" secondAttribute="leading" id="HAm-sC-Qfg"/>
+                <constraint firstItem="zay-k8-aDJ" firstAttribute="leading" secondItem="Dcr-7f-EX5" secondAttribute="leading" constant="10" id="IAK-Al-l18"/>
+                <constraint firstItem="eBh-FN-1D7" firstAttribute="top" secondItem="Dcr-7f-EX5" secondAttribute="top" constant="5" id="InM-RE-JIU"/>
+                <constraint firstAttribute="trailing" secondItem="eBh-FN-1D7" secondAttribute="trailing" constant="10" id="SK7-HH-Txg"/>
+                <constraint firstAttribute="trailing" secondItem="Kux-6V-Q22" secondAttribute="trailing" id="UJz-3s-2GI"/>
+                <constraint firstAttribute="trailing" secondItem="4G3-9c-ZhP" secondAttribute="trailing" id="YrU-1q-RE3"/>
+                <constraint firstItem="zay-k8-aDJ" firstAttribute="top" secondItem="Dcr-7f-EX5" secondAttribute="top" constant="5" id="Yrf-9e-bFE"/>
+                <constraint firstItem="Kux-6V-Q22" firstAttribute="top" secondItem="JCU-gl-LYj" secondAttribute="bottom" id="oh5-kx-R2h"/>
+                <constraint firstItem="JCU-gl-LYj" firstAttribute="top" secondItem="4G3-9c-ZhP" secondAttribute="bottom" constant="5" id="xKb-bE-Iqc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="zay-k8-aDJ" id="5tr-4B-S7P"/>
+                <outlet property="confirmBtn" destination="eBh-FN-1D7" id="Ofh-w3-mAg"/>
+                <outlet property="datePicker" destination="Kux-6V-Q22" id="S8w-Pr-SN9"/>
+                <outlet property="titleLab" destination="4G3-9c-ZhP" id="89C-qe-h9z"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="40.5"/>
+        </view>
+    </objects>
+</document>

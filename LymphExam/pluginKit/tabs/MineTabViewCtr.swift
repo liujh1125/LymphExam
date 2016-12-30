@@ -84,8 +84,10 @@ class MineTabViewCtr: FatherTableViewCtr {
         
         if indexPath.section == 0 {
             cell.textLabel?.text = ["基本信息","病历信息"][indexPath.row]
+            cell.imageView?.image = UIImage.init(named: ["mine_info_icon.png","mine_ehr_icon.png"][indexPath.row])
         }else{
             cell.textLabel?.text = "设置"
+            cell.imageView?.image = UIImage.init(named:"mine_set_icon.png")
         }
 
         return cell
@@ -95,7 +97,12 @@ class MineTabViewCtr: FatherTableViewCtr {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                let infoCtr = UserProfileViewCtr()
+                self.navigationController?.pushViewController(infoCtr, animated: true)
+            }
+        }
         if indexPath.section == 1 {
             let setCtr = SettingViewCtr()
             self.navigationController?.pushViewController(setCtr, animated: true)

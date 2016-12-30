@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-let BASEURL = "http://101.201.103.170:8083/"
+let BASEURL = "http://101.201.103.170:8082/"
 
 
 
@@ -20,6 +20,7 @@ let WIDTH = UIScreen.main.bounds.size.width         //屏幕宽
 let HEIGHT = UIScreen.main.bounds.size.height       //屏幕高
 
 let COLOR_MAIN = UIColor.init(colorLiteralRed: 102/255.0, green: 179/255.0, blue: 48/255.0, alpha: 1)
+let COLOR_GRAY = UIColor.init(colorLiteralRed: 229/255.0, green: 230/255.0, blue: 231/255.0, alpha: 1)
 
 
 func RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor{

@@ -56,14 +56,17 @@ class UserLoginViewCtr: UIViewController ,HeadViewDelegate{
     // 登录按钮事件
     @IBAction func loginAction(){
         
-//        let notification = NotificationCenter.default
-//        notification.post(name: NSNotification.Name(LoginSuccess), object: "LoginIn")
+        let notification = NotificationCenter.default
+        notification.post(name: NSNotification.Name(LoginSuccess), object: "LoginIn")
         
         self.showLoading()
-        HttpRequest.alamofirePost(urlString: "exam/app/frontDeskCtrl/sysInitExam.do", paramet: [:], success: { respond in
+        HttpRequest.alamofireGet(urlString: "http://101.201.103.170:8083/exam/app/frontDeskCtrl/sysInitExam.do", paramet: [:], success: { respond in
             self.hideLoading()
             
             print("-------respond-----\(respond)")
+            
+
+
             
         }) { error in
             
@@ -72,24 +75,7 @@ class UserLoginViewCtr: UIViewController ,HeadViewDelegate{
         
         
         
-//        self.showLoading()
-//        HttpRequestOC.httpPost("exam/app/frontDeskCtrl/sysInitExam.do", body: [:], success: { (respond) in
-//            self.hideLoading()
-//            
-//            
-//        }) { (error) in
-//            self.hideLoading()
-//            
-//            
-//        }
-        
-//        HttpRequest().httpPost(urlString: "exam/app/frontDeskCtrl/sysInitExam.do", paramet: [:], success: { respond in
-//            print("成功")
-//        }) { error in
-//            print("失败")
-//        }
-        
-        
+
         
     }
 

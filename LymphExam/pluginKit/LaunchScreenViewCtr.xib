@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,33 +18,20 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f9m-2g-02p">
-                    <rect key="frame" x="0.0" y="602" width="375" height="65"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国内唯一治疗淋巴水肿平台" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9u-JC-2Bt">
-                            <rect key="frame" x="83" y="20.5" width="208" height="24"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="24" id="mpy-ma-gKb"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.46652251482009888" green="0.73949116468429565" blue="0.24457326531410217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstItem="i9u-JC-2Bt" firstAttribute="centerX" secondItem="f9m-2g-02p" secondAttribute="centerX" id="f24-Uo-ZFf"/>
-                        <constraint firstItem="i9u-JC-2Bt" firstAttribute="centerY" secondItem="f9m-2g-02p" secondAttribute="centerY" id="pmj-8c-7dC"/>
-                        <constraint firstAttribute="height" constant="65" id="rDg-Hz-xlA"/>
-                    </constraints>
-                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launc_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="gfs-DF-4HZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="f9m-2g-02p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Kae-rY-BXf"/>
-                <constraint firstAttribute="trailing" secondItem="f9m-2g-02p" secondAttribute="trailing" id="b2n-KL-IW6"/>
-                <constraint firstAttribute="bottom" secondItem="f9m-2g-02p" secondAttribute="bottom" id="fww-CF-ccX"/>
+                <constraint firstAttribute="trailing" secondItem="gfs-DF-4HZ" secondAttribute="trailing" id="6E5-s4-PPZ"/>
+                <constraint firstAttribute="bottom" secondItem="gfs-DF-4HZ" secondAttribute="bottom" id="I4W-pG-eCa"/>
+                <constraint firstItem="gfs-DF-4HZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bOd-km-FhU"/>
+                <constraint firstItem="gfs-DF-4HZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zOF-dC-zAJ"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="launc_image.png" width="1242" height="2208"/>
+    </resources>
 </document>

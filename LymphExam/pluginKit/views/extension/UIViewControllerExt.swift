@@ -52,8 +52,16 @@ extension UIViewController {
                 self.present(alCtr, animated: true, completion: nil)
             }
         }
-        
     }
+    
+    // 弹出提水信息
+    func showAlertMessage(message: String){
+        let alCtr = UIAlertController(title: "提示", message: message, preferredStyle: .alert)
+        let alAction = UIAlertAction(title: "确定", style: .cancel, handler: { (UIAlertAction) in})
+        alCtr.addAction(alAction)
+        self.present(alCtr, animated: true, completion: nil)
+    }
+    
     
     
     
